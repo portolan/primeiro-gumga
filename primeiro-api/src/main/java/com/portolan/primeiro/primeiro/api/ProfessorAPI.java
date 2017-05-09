@@ -37,4 +37,15 @@ public class ProfessorAPI extends GumgaAPI<Professor, Long> {
     public ProfessorAPI(GumgaService<Professor, Long> service) {
         super(service);
     }
+    /*
+    @Override
+    @GumgaSwagger
+    @Transactional
+    @ResponseStatus(value = HttpStatus.OK)
+    @ApiOperation(value = "delete", notes = "Deleta objeto com o id correspondente.")
+    @RequestMapping(value = {"/{id}"}, method = {RequestMethod.DELETE})
+    @GumgaOperationKey(value = "BILETADA",basic = true)
+    public RestResponse<Professor> delete(Long l) {
+        return super.delete(l);
+    }  */
 }
