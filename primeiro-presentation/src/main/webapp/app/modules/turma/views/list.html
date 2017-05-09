@@ -1,0 +1,41 @@
+	<div class="row">
+	
+	    <div class="col-md-5">
+	      <a ui-sref="turma.insert" class="btn btn-primary">
+	        <i class="glyphicon glyphicon-plus"></i>Novo
+	      </a>
+	
+	      <button type="button" class="btn btn-danger" ng-click="turma.methods.delete(selectedValues)" gumga-confirm="Deseja remover?">
+	        <i class="glyphicon glyphicon-trash"></i>Remover
+	      </button>
+	    </div>
+	
+	    <div class="col-md-7">
+	        <gumga-query search="turma.methods.search(field,param)" advanced-search="turma.methods.advancedSearch(param)" saved-filters="turma.methods.getQuery(page)">
+	            <search-field label="codigo" field="codigo"></search-field>
+	            <search-field label="professor" field="professor"></search-field>
+	            <advanced-search-field  type="string"  label="codigo" field="codigo"></advanced-search-field>
+	            <advanced-search-field  type="string"  label="professor" field="professor"></advanced-search-field>
+	        </gumga-query>
+	    </div>
+	</div>
+	
+	<div class="full-width-without-padding">
+	    <gumga-list sort="turma.methods.sort(field, dir)"
+	           class="table-striped table-condensed"
+	            data="turma.data"
+	            configuration="tableConfig">
+	    </gumga-list>
+	</div>
+
+	<uib-pagination ng-model="page"
+	            max-size="10"
+	            boundary-links="true"
+	            previous-text="‹"
+	            next-Text="›"
+	            first-text="«"
+	            last-text="»"
+	            items-per-page="turma.pageSize"
+	            total-items="turma.count"
+	            ng-change="turma.methods.get(page)">
+	</uib-pagination>

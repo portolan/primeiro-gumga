@@ -1,0 +1,30 @@
+<form name="TurmaForm" gumga-form novalidate>
+		
+	<div gumga-form-class="codigo">
+		<label gumga-translate-tag="turma.codigo">codigo</label>
+		<input gumga-error type="text" name="codigo" ng-model="turma.data.codigo"  class="form-control" />
+	</div>		
+
+	<div gumga-form-class="professor">
+		<label gumga-translate-tag="turma.professor">professor</label>
+	    <gumga-many-to-one
+	            name="professor"
+	            value="turma.data.professor"
+	            search-method="professor.methods.asyncSearch('nome', param)"
+	            field="nome"
+	            authorize-add="false"
+              display-info="false"
+	            post-method="professor.methods.asyncPost(value, 'nome')">
+	    </gumga-many-to-one>
+	</div>
+
+    <gumga-errors label="Lista de erros" title="Lista de erros"></gumga-errors>
+    <gumga-form-buttons
+            back="turma.list"
+            submit="turma.methods.put(turma.data)"
+            position="right"
+            valid="TurmaForm.$valid"
+            confirm-dirty="true"
+            continue="continue">
+    </gumga-form-buttons>    
+</form>

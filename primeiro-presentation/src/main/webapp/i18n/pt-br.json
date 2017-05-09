@@ -1,0 +1,112 @@
+{
+  "coisa": {
+    "title": "Coisa"
+  ,"menulabel": "Coisa "
+  ,"id": "Identificador"
+  ,"descricao": "Descrição"
+  ,"valor": "Valor"
+  ,"ativo": "Ativo"
+  ,"new": "Novo"
+  ,"base": "Coisa"
+  ,"list": "Listar Coisa"
+  ,"edit": "Editar Coisa"
+  ,"insert": "Inserir Coisa"
+  }
+    ,"professor":{
+        "title":"Professor"
+        ,"menulabel": "Professor"
+        ,"edit": "Editar Professor"
+        ,"insert": "Inserir Professor"
+        ,"list": "Consulta Professor"
+        ,"id": "id"
+        ,"nome":"Nome"
+        ,"idade":"Idade"
+    }
+
+    ,"pessoa":{
+        "title":"Pessoa"
+        ,"menulabel": "Pessoa"
+        ,"edit": "Editar Pessoa"
+        ,"insert": "Inserir Pessoa"
+        ,"list": "Consulta Pessoa"
+        ,"id": "id"
+        ,"nome":"Nome"
+        ,"sobrenome":"Sobrenome"
+        ,"cpf":"Cpf"
+    }
+
+    ,"turma":{
+        "title":"Turma"
+        ,"menulabel": "Turma"
+        ,"edit": "Editar Turma"
+        ,"insert": "Inserir Turma"
+        ,"list": "Consulta Turma"
+        ,"id": "id"
+        ,"codigo":"Codigo"
+        ,"professor":"Professor"
+    }
+
+    ,"aluno":{
+        "title":"Aluno"
+        ,"menulabel": "Aluno"
+        ,"edit": "Editar Aluno"
+        ,"insert": "Inserir Aluno"
+        ,"list": "Consulta Aluno"
+        ,"id": "id"
+        ,"nome":"Nome"
+        ,"ra":"Ra"
+    }
+
+,"address": {
+  "cep": "CEP"
+,"numero": "Número"
+,"bairro":"Bairro"
+,"uf":"Estado"
+,"pais": "País"
+,"complemento": "Complemento"
+,"logradouro": "Logradouro"
+,"tipologradouro": "Tipo de Logradouro"
+,"localidade": "Localização"
+}
+,"formbuttons": {
+  "inserir": "Continuar inserindo"
+}
+,"table": {
+  "select": "Selecionar Todos",
+  "clean": "Limpar pesquisa"
+}
+, "advanced": {
+  "gt": "maior que"
+,"ge": "maior igual"
+,"lt": "menor que"
+,"le": "menor igual"
+,"eq": "igual "
+,"ne": "diferente de"
+,"in": "faz parte de"
+,"not_in": "não faz parte de"
+,"contains": "contém"
+,"starts_with": "começa com"
+,"ends_with": "termina com"
+,"not_contains": "não contém"
+},
+  "general":{
+    "coisa": "Coisa Base",
+    "forgot": "Esqueceu sua Senha?"
+  },
+  "welcome":{
+     "menulabel": "Welcome"
+   },
+   "home": {
+  "menulabel": "Início"
+},
+"gumgatagdefinition":{
+    "name":"Nome"
+    ,"menuLabel": "Tags"
+},
+"configuration": {
+  "menulabel": "Configurações",
+  "gumgatagdefinition": "Tags",
+  "gumgacustomfield": "Atributos Genéricos"
+}
+
+}
